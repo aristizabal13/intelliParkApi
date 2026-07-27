@@ -152,9 +152,9 @@ const swaggerOptions = {
         },
         PaymentRequest: {
           type: 'object',
-          required: ['parking_id'],
+          required: ['payment_parking_id'],
           properties: {
-            parking_id: {
+            payment_parking_id: {
               type: 'integer',
               example: 1
             },
