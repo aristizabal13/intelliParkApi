@@ -1,5 +1,5 @@
 const VALID_ROLES = ['administrador', 'operador'];
-const VALID_VEHICLE_TYPES = ['carro', 'moto'];
+const VALID_VEHICLE_TYPES = ['carro', 'moto', 'bicicleta'];
 const VALID_PAYMENT_METHODS = ['efectivo', 'transferencia', 'tarjeta', 'otro'];
 
 const sendValidationError = (res, errors) => {
