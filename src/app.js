@@ -20,7 +20,10 @@ const app = express();
 app.disable("x-powered-by");
 
 app.use(cors());
-app.use(express.json());
+
+// La fotografía viaja temporalmente como Base64.
+// El límite evita aceptar cuerpos demasiado grandes.
+app.use(express.json({ limit: '8mb' }));
 
 app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
